@@ -69,15 +69,11 @@ Manfaatkan tombol **`+ Add filter`** yang terletak di bawah kolom search bar uta
 
 ---
 
-## ⚡ 3. Alternatif Menggunakan Kueri DQL Direct
+# Wazuh Dashboard Implementation - Nginx OCSP Monitoring
 
-Jika Anda ingin mengisi filter secara instan tanpa mengklik tombol satu per satu, Anda dapat menyalin baris perintah **DQL (Dashboard Query Language)** berikut langsung ke dalam kolom *Search* utama (sejajar dengan indikator DQL):
+Dokumen ini menjelaskan langkah-langkah melakukan filtering log Nginx (OCSP Request) pada menu **Discover** di OpenSearch/Wazuh, menyimpannya sebagai *Saved Search*, hingga menggunakannya untuk membangun komponen visualisasi pada **Wazuh Dashboard**.
 
-```text
-location: "/var/log/nginx/access.log" AND full_log: "ocsp.privyca.id" AND data.id: "200" AND data.protocol: "POST"
-
-
-
+---
 
 ## 🚀 Alur Kerja Utama (Workflow)
 
@@ -86,4 +82,3 @@ graph LR
     A[Discover / OpenSearch] -->|Apply DQL Filter| B[Save Search Query]
     B -->|Import Query| C[Create Visualization]
     C -->|Assemble Panel| D[Wazuh Dashboard]
-
