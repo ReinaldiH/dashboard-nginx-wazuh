@@ -14,7 +14,7 @@ Dokumen ini menjelaskan analisis kueri filter dan langkah-langkah teknis untuk m
 
 ---
 
-## 🔍 1. Penjelasan Komponen Query Filter
+## 1. Penjelasan Komponen Query Filter
 
 Berdasarkan filter aktif pada menu Discover, sistem menyaring log dengan parameter spesifik untuk memantau request OCSP yang sukses. Berikut adalah fungsi dari masing-masing komponen filter:
 
@@ -27,7 +27,9 @@ Berdasarkan filter aktif pada menu Discover, sistem menyaring log dengan paramet
 
 ---
 
-## 🛠️ 2. Langkah-Langkah Membuat Filter di Wazuh
+## 2. Langkah-Langkah Membuat Filter di Wazuh
+
+<img width="1678" height="364" alt="image" src="https://github.com/user-attachments/assets/ef8d4c7a-d73f-4a22-94b1-7f2e8d817530" />
 
 Ikuti panduan berikut untuk menyusun ulang kueri filter dari awal di tab Discover:
 
@@ -69,7 +71,7 @@ Manfaatkan tombol **`+ Add filter`** yang terletak di bawah kolom search bar uta
 
 ---
 
-# Wazuh Dashboard Implementation - Nginx OCSP Monitoring
+# 3. Wazuh Dashboard Implementation - Nginx OCSP Monitoring
 
 Dokumen ini menjelaskan langkah-langkah melakukan filtering log Nginx (OCSP Request) pada menu **Discover** di OpenSearch/Wazuh, menyimpannya sebagai *Saved Search*, hingga menggunakannya untuk membangun komponen visualisasi pada **Wazuh Dashboard**.
 
