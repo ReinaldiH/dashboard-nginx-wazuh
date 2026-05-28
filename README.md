@@ -16,7 +16,8 @@ Dokumen ini menjelaskan analisis kueri filter dan langkah-langkah teknis untuk m
 
 ## 1. Penjelasan Komponen Query Filter
 
-<img width="1678" height="364" alt="image" src="https://github.com/user-attachments/assets/ef8d4c7a-d73f-4a22-94b1-7f2e8d817530" />
+<img width="1679" height="273" alt="image" src="https://github.com/user-attachments/assets/3838eadf-5af6-4547-a46d-7aa6103bc6de" />
+
 
 Berdasarkan filter aktif pada menu Discover, sistem menyaring log dengan parameter spesifik untuk memantau request OCSP yang sukses. Berikut adalah fungsi dari masing-masing komponen filter:
 
